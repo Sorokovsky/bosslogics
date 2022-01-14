@@ -13,7 +13,7 @@ let project_folder = require('path').basename(__dirname),
             css: source_folder + '/scss/style.scss',
             js: source_folder + '/js/script.js',
             img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
-            fonts: source_folder + '/fonts/*.ttf',
+            fonts: source_folder + '/fonts/**/*.{eot,svg,ttf,woff}',
         },
         watch: {
             html: source_folder+'/**/*.html',
@@ -36,9 +36,7 @@ let {src, dest} = require('gulp'),
     uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
     webp = require('gulp-webp'),
-    webphtml = require('gulp-webp-html'),
-    ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2');
+    webphtml = require('gulp-webp-html');
 function browserSync(){
     browsersync.init({
         server:{
@@ -51,9 +49,9 @@ function browserSync(){
 function html (){
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
+        fonts()
 }
 function images (){
     return src(path.src.img)
@@ -76,11 +74,7 @@ function images (){
         .pipe(browsersync.stream());
 }
 function fonts(){
-    src(path.src.fonts)
-    .pipe(ttf2woff())
-    .pipe(dest(path.build.fonts));
-    return src(path.src.fonts)
-    .pipe(ttf2woff2())
+   return src(path.src.fonts)
     .pipe(dest(path.build.fonts));
 }
 function js (){

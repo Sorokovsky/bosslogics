@@ -1,0 +1,37 @@
+.header{
+    padding-top: 43px;
+    &__inner{
+        max-width: 1412px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        overflow: hidden;
+        width: 168px;
+        height: auto;
+    }
+    &__img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__nav{
+        max-width: 962px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        display: block;
+        text-transform: uppercase;
+        
+        &:not(:last-child){
+            margin-right: 54px;
+        }
+    }
+}
