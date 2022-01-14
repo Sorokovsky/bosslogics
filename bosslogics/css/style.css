@@ -96,3 +96,27 @@
 .header__item:not(:last-child) {
   margin-right: 54px;
 }
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  position: relative;
+}
+
+.header__link::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  background: #000;
+  width: 0;
+  -webkit-transition: 0.3s width ease;
+  -o-transition: 0.3s width ease;
+  transition: 0.3s width ease;
+}
+
+.header__link:hover::after {
+  width: 100%;
+}
