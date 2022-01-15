@@ -75,6 +75,13 @@ header {
           transform: translateY(-15%);
 }
 
+.paralax4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 .btn {
   padding: 20px 68px;
   display: inline-block;
@@ -395,7 +402,6 @@ header {
 .means {
   margin-top: 234px;
   padding: 0 10px;
-  margin-bottom: 50px;
 }
 
 .means__inner {
@@ -466,4 +472,99 @@ header {
   padding-right: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.brands {
+  margin-top: 150px;
+  padding: 0 0px;
+  padding-top: 200px;
+  position: relative;
+}
+
+.brands__inner {
+  max-width: 1203px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.brands__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1153px;
+}
+
+.brands__image {
+  max-width: 517px;
+  height: auto;
+  overflow: hidden;
+}
+
+.brands__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.brands__desc {
+  max-width: 554px;
+}
+
+.brands__text {
+  line-height: 20px;
+  margin-top: 46px;
+}
+
+.brands__name {
+  color: #09f;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 52px;
+  font-size: 20px;
+}
+
+.brands__about {
+  font-size: 18px;
+  color: #b4b4b4;
+  margin-top: 20px;
+}
+
+.brands__bottom {
+  margin-top: 162px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brands__logo {
+  display: block;
+  width: 250px;
+  max-height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 76px;
+}
+
+.brands__icon {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
