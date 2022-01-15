@@ -1,0 +1,39 @@
+.diferent{
+    position: relative;
+    margin-top: 386px;
+    padding-right: 300px;
+    &__inner{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1450px;
+        justify-content: space-between;
+    }
+    &__desc{
+        max-width: 680px;
+    }
+    &__image{
+        max-width: 520px;
+        height: auto;
+        overflow: hidden;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__item{
+        margin-top: 46px;
+    }
+    &__name{
+        color: #0099ff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__text{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+}

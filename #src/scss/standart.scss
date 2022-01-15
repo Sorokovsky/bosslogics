@@ -32,6 +32,13 @@ section, header{
     height: 772px;
     width: auto;
 }
+.paralax3{
+    position: absolute;
+    top: 0;
+    right: 110px;
+    z-index: 0;
+    transform: translateY(-15%);
+}
 .btn{
     padding: 20px 68px;
     display: inline-block;
