@@ -391,3 +391,79 @@ header {
   font-size: 18px;
   margin-top: 24px;
 }
+
+.means {
+  margin-top: 234px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.means__inner {
+  max-width: 1070px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.means__subtitle {
+  font-size: 70px;
+}
+
+.means__plate {
+  margin-top: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.means__item {
+  max-width: 224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.means__image {
+  height: 70px;
+  width: auto;
+  overflow: hidden;
+}
+
+.means__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.means__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 27px;
+}
+
+.means__text {
+  font-size: 18px;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.means__btn {
+  margin-top: 96px;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
