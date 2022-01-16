@@ -6,7 +6,7 @@
     padding-top: 70px;
     &__inner{
         margin: 0 auto;
-        max-width: 1413px;
+        max-width: 1415px;
     }
     &-top{
         display: flex;
@@ -18,6 +18,12 @@
         max-width: 234px;
         &:nth-child(3)>.footer__link{
             margin-top: 18px;
+        }
+        &:nth-child(3){
+            max-width: 170px;
+        }
+        &:last-child{
+            max-width: 482px;
         }
     }
     &__image{
@@ -58,10 +64,78 @@
         }
     }
     &__icon{
-        transform: translateY(50%);
+        transform: translateY(45%);
         margin-right: 15px;
         display: block;
         width: 14px;
         height: auto;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__input{
+        display: block;
+        max-width: 302px;
+        padding-left: 24px;
+        margin-right: 15px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 40px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-weight: 300;
+        color: #fff;
+        &::placeholder{
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+    &__btn{
+        display: block;
+        padding: 17px 44px;
+    }
+    &__socials{
+        max-width: 186px;
+        display: flex;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__web{
+        display: block;
+        height: 22px;
+        width: auto;
+    }
+    &__icons{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0;
+    }
+    &__copy{
+        display: block;
+        text-decoration: none;
+        color: #929ca2;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    &__right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>.footer__copy{
+            &:not(:last-child){
+                margin-right: 46px;
+            }
+        }
     }
 }
