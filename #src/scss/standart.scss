@@ -5,6 +5,17 @@
     font-family: "Geometria";
     font-size: 18px;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+}
 section, header{
     padding-left:225px;
     padding-right: 302px;
@@ -12,11 +23,16 @@ section, header{
 .inner{
     max-width: 1520px;
 }
+.lock{
+    overflow: hidden;
+}
 .paralax1{
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
+    width: 70%;
+    height: auto;
 }
 .title{
     font-size: 60px;
@@ -29,20 +45,21 @@ section, header{
     top: 0;
     left: 0;
     z-index: 0;
-    height: 772px;
-    width: auto;
+    width: 40%;
 }
 .paralax3{
     position: absolute;
     top: 0;
-    right: 110px;
+    right: -130px;
     z-index: 0;
+    width: 130%;
     transform: translateY(-15%);
 }
 .paralax4{
     position: absolute;
     top: 0;
     left: 0;
+    width: 50%;
     z-index: 0;
 }
 .paralax5{
@@ -50,6 +67,7 @@ section, header{
     z-index: 0;
     top: 0;
     right: 0;
+    width: 70%;
     z-index: 0;
 }
 .btn{
@@ -67,5 +85,21 @@ section, header{
     &:hover{
         background: #fff;
         color: #0099ff;
+    }
+}
+@media (max-width:1500px) {
+    .title{
+        font-size: 35px;
+    }
+    
+}
+@media (max-width:562px) {
+    .paralax3{
+        right: -90px;
+    }
+}
+@media (max-width:418px) {
+    .paralax3{
+        right: -70px;
     }
 }

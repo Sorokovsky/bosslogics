@@ -1,7 +1,6 @@
 .footer{
     position: relative;
     z-index: 2;
-    margin-top: 200px;
     background-color: #001726;
     padding-top: 70px;
     &__inner{
@@ -136,6 +135,32 @@
             &:not(:last-child){
                 margin-right: 46px;
             }
+        }
+    }
+}
+@media (max-width:1450px) {
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        &__inner{
+            max-width: 100%;
+        }
+        &-top{
+            flex-wrap: wrap;
+        }
+        &__form{
+            margin-left: 30px;
+
+        }
+        &__item{
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__item:nth-child(3){
+            max-width: 220px; 
+        }
+        &__input,&__btn{
+            margin-top: 10px;
         }
     }
 }

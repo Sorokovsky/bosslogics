@@ -51,3 +51,24 @@
         padding-bottom: 20px;
     }
 }
+@media (max-width:1014px) {
+    .means{
+        &__subtitle{
+            font-size: 50px;
+        }
+        &__plate{
+            flex-wrap: wrap;
+        }
+        &__item{
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}
+@media (max-width:478px) {
+    .means{
+        &__subtitle{
+            font-size: 30px;
+        }
+    }
+}
