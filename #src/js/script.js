@@ -1,5 +1,6 @@
 let mobile = document.querySelector('.mobile'),
     burger = document.querySelector('.burger');
+
 burger.addEventListener('click', () => {
     if (burger.classList.contains('_active') && mobile.classList.contains('_active')) {
         burger.classList.remove('_active');
